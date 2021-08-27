@@ -39,7 +39,7 @@ public String saveEmployee(@ModelAttribute("employee") Emp employee) {
 	
 }
 @GetMapping("/showFormForUpdate/{id}")	
-public String showform(@PathVariable (value="id") long id, Model model ) {
+public String showform(@PathVariable (value="id") String id, Model model ) {
 	
 	Emp employee= empservice.getEmployeeById(id);
 	model.addAttribute("employee",employee);
@@ -48,7 +48,7 @@ public String showform(@PathVariable (value="id") long id, Model model ) {
 	
 }
 @GetMapping("/deleteEmployee/{id}")	
-public String deleteform(@PathVariable (value="id") long id ) {
+public String deleteform(@PathVariable (value="id") String id ) {
 	
 	this.empservice.deleteEmployeeById(id);
 	

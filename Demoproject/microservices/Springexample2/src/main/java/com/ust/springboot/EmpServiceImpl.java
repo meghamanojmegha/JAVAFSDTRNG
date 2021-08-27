@@ -24,7 +24,7 @@ public class EmpServiceImpl implements EmpService {
 	}
 
 	@Override
-	public Emp getEmployeeById(long id) {
+	public Emp getEmployeeById(String id) {
 		// TODO Auto-generated method stub
 		Optional<Emp> optional = emprepo.findById(id);
 		Emp employee = null;
@@ -37,7 +37,7 @@ public class EmpServiceImpl implements EmpService {
 	}
 
 	@Override
-	public void deleteEmployeeById(long id) {
+	public void deleteEmployeeById(String id) {
 		// TODO Auto-generated method stub
 		this.emprepo.deleteById(id);
 		

@@ -7,23 +7,24 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+import org.springframework.data.mongodb.core.mapping.Document;
 
-@Entity
-@Table(name="employees")
+
+@Document
 public class Emp {
 	@Id
-	@GeneratedValue(strategy =  GenerationType.IDENTITY)
-	private long id;
-	@Column(name="first_name")
+	
+	private String id;
+
 	private String firstName;
-	@Column(name="last_name")
+	
 	private String lastName;
-	@Column(name="email")
+	
 	private String email;
-	public long getId() {
+	public String getId() {
 		return id;
 	}
-	public void setId(long id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	public String getFirstName() {

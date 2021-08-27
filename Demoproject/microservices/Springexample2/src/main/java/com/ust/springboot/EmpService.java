@@ -6,8 +6,8 @@ public interface EmpService {
 	List <Emp> getEmployees();
 
 	void saveEmployee(Emp employee);
-	Emp getEmployeeById(long id);
-	void deleteEmployeeById(long id);
+	Emp getEmployeeById(String id);
+	void deleteEmployeeById(String id);
 	
 
 }
