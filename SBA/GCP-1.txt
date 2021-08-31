@@ -1,0 +1,72 @@
+1. what is Kubernetes? K8S
+ 
+ANS: Kubernetes is a portable, extensible, open-source platform for managing containerized workloads and services, that facilitates both declarative configuration and automation.
+      It has a large, rapidly growing ecosystem. Kubernetes services, support, and tools are widely available.Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications.
+      It groups containers that make up an application into logical units for easy management and discovery.
+
+2. what is the need of K8S?
+
+ANS: Kubernetes allows us to derive maximum utility from containers and build cloud-native applications that can run anywhere, independent of cloud-specific requirements. 
+     This is clearly the efficient model for application development and operations we’ve been waiting for.
+
+3. How does Kubernetes work in GCP platform?
+
+ANS: Kubernetes automates operational tasks of container management and includes built-in commands for deploying applications, rolling out changes to your applications, scaling your applications up and down to fit changing needs, monitoring your applications,
+     and more—making it easier to manage applications.
+
+4. What is GKE?
+
+ANS: Google Kubernetes Engine (GKE) provides a managed environment for deploying, managing, and scaling your containerized applications using Google infrastructure.
+     The GKE environment consists of multiple machines (specifically, Compute Engine instances) grouped together to form a cluster.
+
+5. what are the steps to deploy a spring boot appln onto a Kubernetes container in GKE?
+
+ANS: -Setup and requirements
+	   i) Sign in to Cloud Console and create a new project
+     -Activate Cloud Shell
+     -Get source code
+     - Locally run the app
+     -Package the Java app as a Docker container
+     -Create your cluster
+     -Deploy your app to Kubernetes
+     -Allow external traffic
+     -Scale your service
+     -
+6. what is a Kubernetes Cluster? 
+
+ANS: A Kubernetes cluster is a set of nodes that run containerized applications. Containerizing applications packages an app with its dependences and some necessary services. They are more lightweight and flexible than virtual machines.
+     In this way, Kubernetes clusters allow for applications to be more easily developed, moved and managed. Kubernetes clusters allow containers to run across multiple machines and environments: virtual, physical, cloud-based, and on-premises.
+
+7. What is a Pod, what is a Node in Kubernetes?
+
+ANS: A pod is the smallest execution unit in Kubernetes. A pod encapsulates one or more applications. Pods are ephemeral by nature, if a pod fails, Kubernetes can automatically create a new replica of that pod to continue operations. Pods include one or more containers
+     A Node is a worker machine in Kubernetes and may be either a virtual or a physical machine, depending on the cluster. Each Node is managed by the control plane.
+ 
+8. what is Kubelet and Kubectl?
+
+ANS: The kubelet is the primary "node agent" that runs on each node. It can register the node with the apiserver using one of: the hostname; a flag to override the hostname; or specific logic for a cloud provider.
+     The Kubernetes command-line tool, kubectl, allows you to run commands against Kubernetes clusters. You can use kubectl to deploy applications, inspect and manage cluster resources, and view logs.
+ 
+9. what is a Docker? Explain?
+
+ANS: Docker is an open platform for developing, shipping, and running applications. Docker enables you to separate your applications from your infrastructure so you can deliver software quickly. With Docker, you can manage your infrastructure in the same ways you manage your applications.
+
+10. why should we create a docker image? what does it contain?
+
+ANS: Docker is used to create, run and deploy applications in containers. A Docker image contains application code, libraries, tools, dependencies and other files needed to make an application run. ... The layers speed up Docker builds while increasing reusability and decreasing disk use. Image layers are also read-only files.
+
+11. what is the need of the container platform?
+
+ANS: -Less overhead. Containers require less system resources than traditional or hardware virtual machine environments because they don't include operating system images.
+     -Increased portability. ...
+     -More consistent operation. ...
+     -Greater efficiency. ...
+     -Better application development.
+
+12. what are the benefits of deploying spring boot on a container platform?
+
+ANS: If you are running your application from a container, you can use an executable jar, but it is also often an advantage to explode it and run it in a different way. Certain PaaS implementations may also choose to unpack archives before they run. 
+     This is actually slightly faster on startup (depending on the size of the jar) than running from an unexploded archive. At runtime you shouldn’t expect any differences.
+     Once you have unpacked the jar file, you can also get an extra boost to startup time by running the app with its "natural" main method instead of the JarLauncher.
+
+
